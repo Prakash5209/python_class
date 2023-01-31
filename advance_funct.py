@@ -1,23 +1,23 @@
-# def greet():
-#     print('hello students')
-#     print('welcome students')
+def greet():
+    print('hello students')
+    print('welcome students')
 
-# c = greet                 # call by reference 
-# c()
+c = greet                 # call by reference 
+c()
 
 
-# def addition(num1,num2):
-#     print(num1+num2)
+def addition(num1,num2):
+    print(num1+num2)
     
-# add = addition
-# add(12,23)
+add = addition
+add(12,23)
 
-# def outer():  #global scope
-#     def inner():   #local scope
-#         print('i am inner function')
-#     inner()
+def outer():  #global scope
+    def inner():   #local scope
+        print('i am inner function')
+    inner()
 
-# outer()
+outer()
 
 
 # ================this code is wrong
