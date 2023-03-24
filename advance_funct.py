@@ -28,7 +28,6 @@
 
 # add = calculator()
 # add(1,2)
-# =================this code inside this is wrong
 
 
 

@@ -1,15 +1,8 @@
-def decorator_function(func):
-    def primary():
-        print('okay world')
-        func()
-        print('always last')
-    return primary
-        
+# print(list(map(lambda x:x**2,[i for i in range(10)])))
+# print(list(filter(lambda x:x%2==0,[i for i in range(10)])))
+# lst='what kinds of human is called animal'.split(' ')
+# print(list(filter(lambda x:x.startswith('w'),lst)))
 
-@decorator_function
-def welcome():
-    print('i am always in the middle')
 
-welcome()
-# variable=decorator_function(welcome)
-# variable()
+lst = [i for i in range(10)]
+print(list(map(lambda x:x*2,filter(lambda x:x %2 == 0,lst))))
