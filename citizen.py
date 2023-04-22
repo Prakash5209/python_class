@@ -4,7 +4,13 @@
 # print(list(filter(lambda x:x.startswith('w'),lst)))
 
 
-def function(**kwargs):
-    print(kwargs)
-    
-function('nice,asd')
+class person:
+    def __init__(self,name,address):
+        self.name = name
+        self.address = address
+
+    def person_function(self,name):
+        print(self.name)
+
+cal = person('nepal','earth')
+cal.name
