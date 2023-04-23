@@ -196,3 +196,34 @@
 # u2=User.create_user_with_random_password('hari@gmail.com')
 # print(u2.__dict__)
     
+
+
+
+# w3school.com classes and objects
+
+# class Person:
+#     def __init__(self,firstname,lastname):
+#         self.firstname = firstname 
+#         self.lastname = lastname
+        
+#     def __str__(self):
+#         return f'{self.firstname}:{self.lastname}'
+    
+# p1 = Person('earth','other')
+# print(p1)
+
+
+
+
+# object method ↓
+
+# class Person:
+#     def __init__(self,firstname,lastname):
+#         self.firstname = firstname
+#         self.lastname = lastname
+        
+#     def myfunction(self):
+#         return f'{self.firstname}:{self.lastname}'
+    
+# p1 = Person('prakash','chaudhary')
+# print(p1.myfunction())
