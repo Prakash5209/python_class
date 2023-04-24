@@ -227,3 +227,26 @@
     
 # p1 = Person('prakash','chaudhary')
 # print(p1.myfunction())
+
+
+
+# parent and child class
+class Person:
+    def __init__(self,firstname,lastname):
+        self.firstname = firstname 
+        self.lastname = lastname 
+        
+    def person_output(self):
+        return f'{self.firstname}:{self.lastname}'
+    
+class Student(Person):
+    def __init__(self,firstname,lastname,middlename):
+        super().__init__(firstname,lastname)
+        self.middlename = middlename
+        
+    def student_ouput(self):
+        return f'{self.firstname},{self.middlename},{self.lastname}'
+
+x = Student('okay','nicel','copy')
+print(x.person_output())
+print(x.student_ouput())
