@@ -22,6 +22,13 @@ class Object:
     def __str__(self):
         return f'{self.assignment}'
     
+    def method(self):
+        return f'method {self.assignment}'
+    
 
-sub = Object('hello')
+class Child(Object):
+    pass 
+
+sub = Child('earth')
 print(sub)
+print(sub.method())
