@@ -16,18 +16,12 @@
 
 
 class Object:
-    def __init__(self,name,planet):
-        self.name = name
-        self.planet = planet
-    
-    def printer(self):
-        print(self.name,self.planet)
+    def __init__(self,assignment):
+        self.assignment = assignment
         
+    def __str__(self):
+        return f'{self.assignment}'
+    
 
-
-class Student(Object):
-    def __init__(self,name,planet):
-        Object.__init__(self,name,planet)
-
-stu = Student('okay','this')
-stu.printer()
+sub = Object('hello')
+print(sub)
