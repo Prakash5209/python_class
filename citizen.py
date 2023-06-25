@@ -23,12 +23,22 @@ class Object:
         return f'{self.assignment}'
     
     def method(self):
-        return f'method {self.assignment}'
+        return f'method {self.assignment.upper()}'
     
 
 class Child(Object):
-    pass 
+    def __init__(self,assignment,location):
+        super().__init__(assignment)
+        self.location = location
 
-sub = Child('earth')
-print(sub)
-print(sub.method())
+    def another_method(self):
+        return f'another one method {self.assignment.swapcase()}. location:{self.location}'
+
+
+# xa = Child('OKAY').method()
+# ja = Child('nice')
+# print(xa)
+# print(ja)
+
+xa = Child('COMPUTer mouSE','nepal').another_method()
+print(xa)
